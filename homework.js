@@ -33,48 +33,38 @@ const resultadoHoisting = "undefined";
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  var mensajito = "Hola, soy una string";
-  return mensajito;
+  return str;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var x = 5, y= 10;
-  var resultado = x + y;
-  return resultado;
+  return x + y;
 }
 
 function resta(x, y) {
   // Devuelve "x" menos "y"
   // Tu código:
-  var x = 10, y = 5;
-  var resultado = x - y;
-  return resultado;
+  return x - y;
 }
 
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
-  var x = 5, y = 10;
-  var resultado = x * y;
-  return resultado;
+  return x * y;
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
-  var x = 10, y = 5;
-  var resultado = x / y;
-  return resultado;
+  return x / y;
 }
 
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  var x = 5, y = 5;
   if (x == y) {
     return true;
   } else {
@@ -86,7 +76,6 @@ function sonEstrictamenteIguales(x, y) {
   // Igualdad estricta: usá sólo === (no uses ==).
   // Devolvé false si tipos o valores difieren (ej. 5 y '5' -> false).
   // Tu código:
-  var x = 5, y = 5;
   if (x === y) {
     return true;
   } else {
@@ -98,8 +87,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  var palabra1 = "Hola", palabra2 = "Mundo";
-  if (palabra1.length === palabra2.length) {
+  if (str1.length === str2.length) {
     return true;
   } else {
     return false;
@@ -121,7 +109,6 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  var num = 51;
   if (num > 50) {
     return true;
   } else {
@@ -132,16 +119,13 @@ function mayorQueCincuenta(num) {
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  var x = 21, y = 5;
-  var resultado = x % y;
-  return resultado;
+  return x % y;
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  var num = 6;
   if (num % 2 === 0) {
     return true;
   } else {
@@ -153,7 +137,6 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  var num = 7;
   if (num % 2 !== 0) {
     return true;
   } else {
@@ -165,40 +148,30 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  num = 5;
   return num * num; 
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  num = 5;
   return num * num * num;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  num = 5, exponent = 3;
-  var resultado = num^exponent;
-  return resultado;
-
-  //otra forma...
-  num = 5, exponent = 3;
   return Math.pow(num, exponent); 
 }
 
 function redondearNumero(num) {
   // Redondea "num" y devuélvelo
   // Tu código:
-  num = 3.14;
   return Math.round(num);
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba y devuélvelo
   // Tu código:
-  num = 3.14;
   return Math.ceil(num);
 }
 
@@ -206,15 +179,13 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  var cadenita = "Hola, mundo";
-  return cadenita + "!";
+  return str + "!";
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Pablo" -> "Soy Pablo"
   // Tu código:
-  var nombre = "Francisco", apellido = "Matos";
   return nombre + " " + apellido;
 }
 
@@ -222,16 +193,13 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente form:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var nombre = "Francisco";
   return "Hola " + nombre + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un cuadrado teniendo su altura y ancho
   // Tu código:
-  var alto = 5, ancho = 10;
-  var area = alto * ancho;
-  return area;
+  return alto * ancho;
 }
 
 // No cambies los nombres de las funciones.
@@ -241,13 +209,12 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  var x = 10, y = 5;
   if (x > y) {
     return x;
   } else if (y > x) {
     return y;
   } else {
-    return x; // o return y; ambos son iguales
+    return x;
   }
 }
 
@@ -284,7 +251,6 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  var numero = 30;
   if (numero < 50 && numero > 20) {
     return true;
   } else {    
@@ -332,6 +298,12 @@ function esPrimo(numero) {
   if (numero < 2) {
     return false;
   }
+  for (let i = 2; i < numero; i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
 
 // --- Temario ampliado (alcance let/const, tipos, operadores, Math, strings, condicionales, bucles avanzados) ---
@@ -506,7 +478,7 @@ function noEsValorFalso(valor) {
 function clasificarSigno(num) {
   // Usá sólo expresiones ternarias (sin if/switch): devolvé la string 'positivo', 'negativo' o 'cero'.
   // Tu código:
-  return num > 0 ? 'positivo' : num < 0 ? 'negative' : 'cero';
+  return num > 0 ? 'positivo' : num < 0 ? 'negativo' : 'cero';
 }
 
 function clasificarTipoDia(codigo) {
